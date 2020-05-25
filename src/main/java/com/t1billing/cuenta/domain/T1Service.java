@@ -1,4 +1,4 @@
-package com.anoush.t1billing.cuenta.domain;
+package com.t1billing.cuenta.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Data
@@ -15,6 +14,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Builder
 @Entity
+@Table(name="service")
 public class T1Service {
 
     @Id
@@ -27,5 +27,7 @@ public class T1Service {
     private LocalDateTime startDate;
     private LocalDateTime endDate;
     private BigDecimal cost;
+    private LocalDateTime creationDate;
+    private LocalDateTime modificationDate;
 
 }

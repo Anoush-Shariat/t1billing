@@ -1,4 +1,4 @@
-package com.anoush.t1billing.cuenta;
+package com.t1billing.cuenta;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
